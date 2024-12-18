@@ -2,8 +2,6 @@ import UserStore from "@/lib/user";
 import { EventManager } from "@/util/eventManager";
 
 export function LoginPage({ container, router }) {
-  if (UserStore.checkLogin()) return router.navigation("/");
-
   const login = (e) => {
     if (e.target.id !== "login-form") return;
     e.preventDefault();

@@ -47,6 +47,11 @@ class Router {
       return;
     }
 
+    if (pathname === "/login" && UserStore.checkLogin()) {
+      this.navigation("/");
+      return;
+    }
+
     EventManager.clearEvent();
 
     this.container.innerHTML = route.component({
