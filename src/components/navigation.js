@@ -21,10 +21,12 @@ const navList = {
     },
   ],
 };
-const getClassName = (path) =>
-  window.location.pathname === path
-    ? "text-blue-600 font-bold "
-    : "text-gray-600";
+const getClassName = (path) => {
+  const currentPath = window.location.hash
+    ? window.location.hash.slice(1)
+    : window.location.pathname;
+  return currentPath === path ? "text-blue-600 font-bold" : "text-gray-600";
+};
 
 export function Navigation() {
   const renderedNavs = UserStore.checkLogin()
