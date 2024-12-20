@@ -1,6 +1,6 @@
 import { Footer, Header } from "@/components";
 import { EventManager } from "@/util/eventManager";
-import UserStore from "@/lib/user";
+import UserStore from "@/store/user";
 
 export function ProfilePage({ container }) {
   const user = UserStore.geUser();

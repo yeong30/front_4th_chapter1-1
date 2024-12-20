@@ -1,4 +1,4 @@
-import UserStore from "@/lib/user";
+import UserStore from "@/store/user";
 import { EventManager } from "@/util/eventManager";
 
 export function LoginPage({ container, router }) {

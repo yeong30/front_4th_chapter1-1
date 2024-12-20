@@ -1,4 +1,4 @@
-import UserStore from "@/lib/user";
+import UserStore from "@/store/user";
 
 const navList = {
   private: [

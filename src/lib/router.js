@@ -1,5 +1,5 @@
 import { EventManager } from "@/util/eventManager";
-import UserStore from "./user";
+import UserStore from "../store/user";
 
 class Router {
   routes = {};

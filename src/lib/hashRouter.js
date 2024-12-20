@@ -1,4 +1,4 @@
-import UserStore from "./user";
+import UserStore from "../store/user";
 import { Router } from "./router";
 
 class HashRouter extends Router {
