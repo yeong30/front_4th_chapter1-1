@@ -1,31 +1,6 @@
-// import UserStore from "@/lib/user";
 import { Footer, Header } from "@/components";
-// import { EventManager } from "@/util/eventManager";
-// import storage from "@/util/storage";
 
 export function HomePage() {
-  // let posts = storage.get("posts") || [];
-
-  // const appendPost = (e) => {
-  //   e.preventDefault();
-  //   if (!e.target.matches("#post-form")) return;
-  //   const { content } = e.target.elements;
-  //   const user = UserStore.geUser()?.username || "anonymous";
-  //   const newPosts = [
-  //     ...posts,
-  //     {
-  //       user,
-  //       date: Date.now(),
-  //       content: content.value,
-  //     },
-  //   ];
-
-  //   storage.set("posts", newPosts);
-  //   posts = newPosts;
-  // };
-
-  // EventManager.addEvent(container, "submit", appendPost);
-
   return `
     <div class="bg-gray-100 min-h-screen flex justify-center">
       <div class="max-w-md w-full">
